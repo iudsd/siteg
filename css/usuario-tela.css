@@ -10,33 +10,28 @@ body {
 }
 
 
-.header-admin {
+.header-usuario {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   padding: 15px 20px;
-  background-color: #A98C8C;
+  background-color: #563a3a;
   border-radius: 8px;
   margin: 20px;
 }
 
-.header-admin h1 {
+.header-usuario h1 {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
 }
 
-.header-admin div {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.header-usuario form {
+  margin: 0;
 }
 
-
-.botao-menu,
-.botao-home,
-.botao-sair {
-  background-color: #563a3a;
+.botao-home {
+  background-color: crimson;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -47,44 +42,14 @@ body {
   transition: filter 0.3s;
 }
 
-.botao-menu:hover,
-.botao-home:hover,
-.botao-sair:hover {
+.botao-home:hover {
   filter: brightness(90%);
 }
-
-
-.menu-admin {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.menu-admin a {
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: #563a3a;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: filter 0.3s;
-}
-
-.menu-admin a.ativo {
-  background-color: #9b8357; 
-}
-
-.menu-admin a:hover {
-  filter: brightness(90%);
-}
-
 
 .pesquisa-container {
   display: flex;
   justify-content: flex-end;
-  margin: 15px 20px;
-  gap: 5px;
+  margin: 0 20px 15px;
 }
 
 .pesquisa-container input[type="text"] {
@@ -93,10 +58,11 @@ body {
   border: 1px solid #ccc;
   font-size: 16px;
   width: 200px;
+  margin-right: 5px;
 }
 
 .pesquisa-container button {
-  background-color: #A98C8C;
+  background-color: #563a3a;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -110,7 +76,6 @@ body {
 .pesquisa-container button:hover {
   filter: brightness(90%);
 }
-
 
 .container-table {
   display: flex;
@@ -127,60 +92,36 @@ table {
 
 table th,
 table td {
-  border: 1px solid #A98C8C;
+  border: 1px solid #563a3a;
   padding: 10px;
   text-align: left;
   font-size: 16px;
 }
 
 table th {
-  background-color: #A98C8C;
+  background-color: #563a3a;
   color: #fff;
   font-weight: bold;
 }
 
 table td {
-  color: #333b1e;
+  color: #333;
 }
 
 
-.botao-cadastrar,
-.botao-editar,
-.botao-excluir {
-  padding: 5px 10px;
-  border-radius: 8px;
+.botao-comprar {
+  background-color: #9b8357;
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
   border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-weight: bold;
   cursor: pointer;
   transition: filter 0.3s;
 }
 
-.botao-cadastrar {
-  background-color: #563a3a;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-.botao-editar {
-  background-color: #9b8357;
-}
-
-.botao-excluir {
-  background-color: crimson;
-}
-
-.botao-cadastrar:hover,
-.botao-editar:hover,
-.botao-excluir:hover {
+.botao-comprar:hover {
   filter: brightness(90%);
-}
-
-
-form {
-  margin: 0;
 }
 
 .produto-img {
@@ -197,10 +138,4 @@ form {
   color: #666;
   font-size: 14px;
   font-style: italic;
-}
-
-.container-admin-banner h1 {
-  margin-top: 40px;
-  font-size: 30px;
-  color: #000000;
 }

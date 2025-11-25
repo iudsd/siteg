@@ -1,21 +1,134 @@
+body {
+  background-color: #FADFDC;
+  font-family: "Barlow", sans-serif;
+}
+
+.container-admin-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.logo-admin {
+  display: none;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333b1e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ornamento {
+  display: none;
+}
+
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.container-form input[type="text"],
+.container-form input[type="email"],
+.container-form input[type="password"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+.container-form input[type="submit"] {
+  background-color: #A98C8C;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.container-form input[type="submit"]:hover {
+  filter: brightness(90%);
+}
+
+
+.mensagem-erro {
+  color: crimson;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mensagem-erro.oculto {
+  display: none;
+}
+
+
 .container-topo {
   display: flex;
   flex-direction: column;
   width: 75%;
-  margin: auto;
+  margin: 40px auto;
   max-width: 100%;
   padding: 20px;
+  background-color: #FADFDC;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .topo-direita {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center; 
   align-items: center;
   width: 100%;
   gap: 10px;
-  background-color: #ebc181;
+  background-color: #A98C8C;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
+}
+
+
+.topo-direita p {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.topo-direita form {
+  margin: 0;
+  display: inline-block;
+  
+}
+
+.topo-direita .botao-sair {
+  background-color: #563a3a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.topo-direita .botao-sair:hover {
+  filter: brightness(90%);
 }
 
 .conteudo {
@@ -23,70 +136,25 @@
   margin-top: 20px;
 }
 
-.botao-sair {
-  background-color: #ebc181;
-  color: #333b1e;
-  border: none;
-  border-radius: 10px;
-  padding: 8px 16px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  font-family: "Poppins", sans-serif;
-}
-
-.botao-sair:hover {
-  background-color: #d9a95f;
-  transform: scale(1.05);
-}
-
-/* Corrige a largura do formulário do botão sair */
-.topo-direita form {
-  width: auto !important;
-  margin: 0 !important;
-  display: inline-block !important;
-  flex: 0 0 auto !important;
-}
-
-.topo-direita .botao-sair {
-  width: auto !important;
-  white-space: nowrap;
-}
-
 .link-adm {
-  color: #bac8d3; /* Cor do link */
-  text-decoration: none; /* Remove o sublinhado */
-  font-weight: bold; /* Negrito */
-  font-size: 16px;
-  transition: color 0.3s ease; /* Animação suave na cor */
-}
-
-/* Quando o mouse passa por cima */
-.link-adm:hover {
-  color: #005fa3;
-  text-decoration: underline;
-}
-
-/* Quando o link já foi visitado */
-.link-adm:visited {
-  color: #a4d0db;
-}
-
-/* Quando o link está sendo clicado */
-.link-adm:active {
-  color: #003f7f;
-}
-
-.container-form .form-wrapper .mensagem-erro {
-  color: #c0392b;
-  background: #fff0f0;
-  border: 1px solid #c0392b;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
   padding: 8px 12px;
-  border-radius: 6px;
-  margin: 12px 0;
+  background-color: #A98C8C;
+  border-radius: 8px;
+  transition: filter 0.3s;
+  display: inline-block;
 }
 
-.mensagem-erro.oculto {
-  display: none;
+.link-adm:hover {
+  filter: brightness(90%);
+  text-decoration: none;
+}
+
+.logo-banner {
+  width: 18%;
+  border-radius: 20%;
+  margin-bottom: 50px;
 }
